@@ -41,8 +41,8 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-layer-3
 dns-resolver
+layer-3
 speed-test
 traffic-monitoring
 "
