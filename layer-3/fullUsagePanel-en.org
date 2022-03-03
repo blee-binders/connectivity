@@ -39,10 +39,15 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *ICMs Overview:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "shIcm" :icmName "l3Admin.sh" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "l3Admin.sh -i examples")][l3Admin.sh]]  [[elisp:(lsip-local-run-command "l3Admin.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "l3Admin.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "l3Admin.sh" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "l3Admin.sh -i examples")][l3Admin.sh]]  [[elisp:(lsip-local-run-command "l3Admin.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "l3Admin.sh -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "sysSealIptables.sh" :comment "Firewall" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "sysSealIptables.sh -i examples")][sysSealIptables.sh]]  [[elisp:(lsip-local-run-command "sysSealIptables.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "sysSealIptables.sh -i describe")][describe]] *|*  =Firewall= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "lcaRcLocalCompat.sh" :comment "Firewall Rc" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /shIcm/ :: [[elisp:(lsip-local-run-command "lcaRcLocalCompat.sh -i examples")][lcaRcLocalCompat.sh]]  [[elisp:(lsip-local-run-command "lcaRcLocalCompat.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaRcLocalCompat.sh -i describe")][describe]] *|*  =Firewall Rc= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
