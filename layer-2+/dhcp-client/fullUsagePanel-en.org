@@ -37,6 +37,8 @@
 ** B|
 * 
 * [[elisp:(lsip-local-run-command "sudo nmap --script broadcast-dhcp-discover")][sudo nmap --script broadcast-dhcp-discover]]
+*
+* sudo dhclient -v -r
 * 
 * Gets The default interface --  ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)'
 * B|
