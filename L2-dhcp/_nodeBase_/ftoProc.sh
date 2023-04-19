@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/connectivity/ftoProc.sh
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/connectivity/L2-dhcp/_nodeBase_/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
@@ -41,13 +41,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-dns-resolver
-L3-interfaces
-L4
-L3-routing
-speed-test
-traffic-monitoring
-L3-firewall
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -64,8 +57,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-_nodeBase_
-L2-dhcp
 "
 # }}} DBLOCK-nodesList
 ####+END:
