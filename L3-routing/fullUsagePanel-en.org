@@ -23,8 +23,7 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
-* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
-
+* +
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L2-dhcp/_nodeBase_")][ =L2-dhcp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-interfaces")][L3-interfaces]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-routing")][L3-routing]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L4")][L4]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/dns-resolver")][dns-resolver]] *|* [[elisp:(dired "/bisos/git/auth/bxRepos/blee-binders/connectivity/layer-2+")][ ~layer-2+~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/nmcli/_nodeBase_")][ =nmcli= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/speed-test")][speed-test]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/traffic-monitoring")][traffic-monitoring]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiConnection/_nodeBase_")][ =wifiConnection= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/_nodeBase_")][ =wifiHotspot= ]] *|*
@@ -48,16 +47,16 @@
 * Comment:: l3Admin.sh -i defaultInterface runs  ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)'
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "l3Admin.sh -i defaultInterface"  :results t :comment "default interface" :afterComment "Passive"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "l3Admin.sh -i defaultInterface")][l3Admin.sh -i defaultInterface]] *|*  =default interface= *|*  Passive  |
-Last Executed at: 202311-14-15:12:48  by: bystar on: HSS-1005.intra
+Last Executed at: 202401-12-12:32:38  by: bystar on: PML-1006.intra
 ----------------------------
 enp0s31f6
-wlx00c0cab044d5
+wlp2s0
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)"  :results t :comment "default ipaddr" :afterComment "Passive"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)")][l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)]] *|*  =default ipaddr= *|*  Passive  |
-Last Executed at: 202311-14-15:12:48  by: bystar on: HSS-1005.intra
+Last Executed at: 202401-12-12:32:38  by: bystar on: PML-1006.intra
 ----------------------------
 EH_,l3Admin.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: l3Admin.sh::vis_givenInterfaceGetIPAddr[99]: eval [[ 2 -eq 1 ]] [ErrCode]= 1
 

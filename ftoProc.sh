@@ -41,12 +41,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-L3-interfaces
 dns-resolver
-traffic-monitoring
-speed-test
-L3-routing
+L3-interfaces
 L4
+L3-routing
+speed-test
+traffic-monitoring
 L3-firewall
 "
 # }}} DBLOCK-leavesList
@@ -64,12 +64,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-L2-dhcp
-_nodeBase_
 nmcli
-layer-2+
 wifiHotspot
+_nodeBase_
+layer-2+
 wifiConnection
+L2-dhcp
 "
 # }}} DBLOCK-nodesList
 ####+END:
