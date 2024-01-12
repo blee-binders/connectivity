@@ -42,17 +42,18 @@
 * Comment:: l3Admin.sh -i defaultInterface runs  ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)'
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "l3Admin.sh -i defaultInterface"  :results t :comment "default interface" :afterComment "Passive"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "l3Admin.sh -i defaultInterface")][l3Admin.sh -i defaultInterface]] *|*  =default interface= *|*  Passive  |
-Last Executed at: 202212-28-13:55:38  by: bystar on: PML-1006.intra
+Last Executed at: 202311-14-15:13:07  by: bystar on: HSS-1005.intra
 ----------------------------
 enp0s31f6
+wlx00c0cab044d5
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)"  :results t :comment "default ipaddr" :afterComment "Passive"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)")][l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)]] *|*  =default ipaddr= *|*  Passive  |
-Last Executed at: 202212-28-13:55:38  by: bystar on: PML-1006.intra
+Last Executed at: 202311-14-15:13:07  by: bystar on: HSS-1005.intra
 ----------------------------
-192.168.0.90
+EH_,l3Admin.sh,_opDoAssert,530: PROBLEM: ASSERTION FAILED: l3Admin.sh::vis_givenInterfaceGetIPAddr[99]: eval [[ 2 -eq 1 ]] [ErrCode]= 1
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -90,6 +91,7 @@ Last Executed at: 202212-28-13:55:38  by: bystar on: PML-1006.intra
 #+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
 #+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
 #+CATEGORY: L:dhcp-client
+
 ####+END
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]

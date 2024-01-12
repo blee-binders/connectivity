@@ -1,0 +1,176 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: connectivity/wifiHotspot
+#+roam_tags: branch
+#+roam_key: blee-binders/connectivity/wifiHotspot
+[[roam:blee-binders/connectivity]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/_nodeBase_/fullUsagePanel-en.org =*
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: blee-binders/connectivity -- wifiHotspot~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
+
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/bridgedHotspot/_nodeBase_")][ =bridgedHotspot= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L2-dhcp/_nodeBase_")][ =L2-dhcp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-interfaces")][L3-interfaces]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-routing")][L3-routing]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L4")][L4]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/dns-resolver")][dns-resolver]] *|* [[elisp:(dired "/bisos/git/auth/bxRepos/blee-binders/connectivity/layer-2+")][ ~layer-2+~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/nmcli/_nodeBase_")][ =nmcli= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/speed-test")][speed-test]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/traffic-monitoring")][traffic-monitoring]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiConnection/_nodeBase_")][ =wifiConnection= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/_nodeBase_")][ =wifiHotspot= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** All things related to creation and management of WiFi Acces Point (AP) / Hotspots.
+** See bridgedHotspot decendent also.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Resources" :anchor "" :extraInfo "Web Urls"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Resources_: |]]  Web Urls  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** <2023-11-14 Tue 15:18>
+** https://unix.stackexchange.com/questions/234552/create-wireless-access-point-and-share-internet-connection-with-nmcli
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "See Also" :anchor "" :extraInfo "sibling: nmcli && child: bridgedHotspot"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _See Also_: |]]  sibling: nmcl && child: bridgedHotspot  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** nmcli
+** bridgedHotspot
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Commands" :anchor "" :extraInfo "Debian Commands"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Commands_: |]]  Debian Commands  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "iw" :comment "show / manipulate wireless devices" :afterComment "L2+L3"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "iw")][iw]] _|_ [[elisp:(manual-entry "iw")][Man]] _|_ [[elisp:(lsip-local-run-command "iw --help")][iw --help]] *#*  =show / manipulate wireless devices= *|*  L2+L3  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Basic information" :anchor "" :extraInfo "Passive -- Non-Intrusive"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Basic information_: |]]  Passive -- Non-Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "iw list"  :results nil :comment "and search for AP among supported interface modes." :afterComment "Passive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "iw list")][iw list]] *|*  =and search for AP among supported interface modes.= *|*  Passive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "iw list | grep AP"  :results nil :comment "and search for AP among supported interface modes." :afterComment "Passive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "iw list | grep AP")][iw list | grep AP]] *|*  =and search for AP among supported interface modes.= *|*  Passive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "nmcli device"  :results nil :comment "and search for AP among supported interface modes." :afterComment "Passive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "nmcli device")][nmcli device]] *|*  =and search for AP among supported interface modes.= *|*  Passive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "nmcli device wifi list"  :results nil :comment "and search for AP among supported interface modes." :afterComment "Passive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "nmcli device")][nmcli device]] *|*  =and search for AP among supported interface modes.= *|*  Passive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Create An Access Point" :anchor "" :extraInfo "Intrusive"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Create An Access Point_: |]]  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Drivers Installation" :anchor "" :extraInfo "RTL8812AU/21AU and RTL8814AU Wireless drivers"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Drivers Installation:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** [Device] Alfa Networks AWUS036ACH [Chipset] 88XXau (rtl8812au)
+** https://github.com/aircrack-ng/rtl8812au
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Create Hotspot And Configure It" :anchor "" :extraInfo "wifiDev=wlx00c0cab044d5 conName=wap010 ssid=lws-1000010"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Create Hotspot And Configure It:* |]]  wifiDev=wlx00c0cab044d5 conName=wap010 ssid=lws-1000010  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli con add type wifi ifname wlx00c0cab044d5 con-name wap010 autoconnect no ssid lws-1000010"  :results nil :comment "CONNECTION" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli con add type wifi ifname wlx00c0cab044d5 con-name wap010 autoconnect no ssid lws-1000010")][echo sudo nmcli con add type wifi ifname wlx00c0cab044d5 con-name wap010 autoconnect no ssid lws-1000010]] *|*  =CONNECTION= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection modify wap010 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared"  :results nil :comment "CONNECTION" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection modify wap010 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared")][echo sudo nmcli connection modify wap010 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared]] *|*  =CONNECTION= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection modify wap010 wifi-sec.key-mgmt wpa-psk"  :results nil :comment "CONNECTION" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection modify wap010 wifi-sec.key-mgmt wpa-psk")][echo sudo nmcli connection modify wap010 wifi-sec.key-mgmt wpa-psk]] *|*  =CONNECTION= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection modify wap010 wifi-sec.psk lePassword"  :results nil :comment "CONNECTION" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection modify wap010 wifi-sec.psk lePassword")][echo sudo nmcli connection modify wap010 wifi-sec.psk lePassword]] *|*  =CONNECTION= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Up/Down the Hotspot" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Up/Down the Hotspot:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection up wap010"  :results nil :comment "UP" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection up wap010")][echo sudo nmcli connection up wap010]] *|*  =UP= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection down wap010"  :results nil :comment "DOWN" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection down wap010")][echo sudo nmcli connection down wap010]] *|*  =DOWN= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Bridge the Hotspot" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Bridge the Hotspot:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** See bridgedHotspot decendent also.
+** -B|
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:wifiHotspot
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

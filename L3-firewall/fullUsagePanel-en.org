@@ -26,7 +26,8 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L2-dhcp/_nodeBase_")][ =L2-dhcp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-interfaces")][L3-interfaces]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-routing")][L3-routing]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L4")][L4]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/dns-resolver")][dns-resolver]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/speed-test")][speed-test]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/traffic-monitoring")][traffic-monitoring]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/dns-resolver")][dns-resolver]] *|* [[elisp:(dired "/bisos/git/auth/bxRepos/blee-binders/connectivity/layer-2+")][ ~layer-2+~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/nmcli/_nodeBase_")][ =nmcli= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/speed-test")][speed-test]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/traffic-monitoring")][traffic-monitoring]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiConnection/_nodeBase_")][ =wifiConnection= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/_nodeBase_")][ =wifiHotspot= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -45,21 +46,22 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo iptables -v -x -n -L"  :results t :comment "List iptables" :afterComment "Diagnostics"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "sudo iptables -v -x -n -L")][sudo iptables -v -x -n -L]] *|*  =List iptables= *|*  Diagnostics  |
-Last Executed at: 202212-28-13:55:20  by: bystar on: PML-1006.intra
+Last Executed at: 202311-14-15:12:42  by: bystar on: HSS-1005.intra
 ----------------------------
+# Warning: iptables-legacy tables present, use iptables-legacy to see them
 Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
     pkts      bytes target     prot opt in     out     source               destination
-48499398 20376628287 LIBVIRT_INP  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+   74677 83109187 LIBVIRT_INP  all  --  *      *       0.0.0.0/0            0.0.0.0/0
 
 Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
     pkts      bytes target     prot opt in     out     source               destination
-       2      656 LIBVIRT_FWX  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-       2      656 LIBVIRT_FWI  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-       2      656 LIBVIRT_FWO  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+      30     2748 LIBVIRT_FWX  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+      30     2748 LIBVIRT_FWI  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+      30     2748 LIBVIRT_FWO  all  --  *      *       0.0.0.0/0            0.0.0.0/0
 
 Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
     pkts      bytes target     prot opt in     out     source               destination
-19326510 269259644185 LIBVIRT_OUT  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+   69715 11562457 LIBVIRT_OUT  all  --  *      *       0.0.0.0/0            0.0.0.0/0
 
 Chain LIBVIRT_FWI (1 references)
     pkts      bytes target     prot opt in     out     source               destination
@@ -129,6 +131,7 @@ Chain LIBVIRT_OUT (1 references)
 #+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
 #+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
 #+CATEGORY: L:L3-firewall
+
 ####+END
 ####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
