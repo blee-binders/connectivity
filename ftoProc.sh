@@ -13,13 +13,13 @@ __copying__="
 
 ####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/connectivity/ftoProc.sh
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/connectivity/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
     exit $?
 fi
 ####+END:
@@ -41,13 +41,12 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-dns-resolver
 L3-interfaces
-L4
-L3-routing
 speed-test
 traffic-monitoring
+L3-routing
 L3-firewall
+L4
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -64,12 +63,13 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-nmcli
-wifiHotspot
-_nodeBase_
 layer-2+
+nmcli
 wifiConnection
+dnsResolution
+wifiHotspot
 L2-dhcp
+_nodeBase_
 "
 # }}} DBLOCK-nodesList
 ####+END:

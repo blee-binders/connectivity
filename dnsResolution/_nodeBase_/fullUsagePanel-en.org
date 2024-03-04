@@ -36,9 +36,361 @@
 ####+END
 ** +
 ** Overview Comes Here.
-** -B|
+** -B|* + 
 * +
+*  http://cr.yp.to/djbdns/debugging.html
 * -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "DJbDns Resolution Tools" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _DJbDns Resolution Tools_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep t :folding? nil :label "Intro" :command "dnsip" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnsip")][dnsip]] _|_ [[elisp:(manual-entry "dnsip")][Man]] _|_ [[elisp:(lsip-local-run-command "dnsip --help")][dnsip --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "dnsname" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnsname")][dnsname]] _|_ [[elisp:(manual-entry "dnsname")][Man]] _|_ [[elisp:(lsip-local-run-command "dnsname --help")][dnsname --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "dnsmx" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnsmx")][dnsmx]] _|_ [[elisp:(manual-entry "dnsmx")][Man]] _|_ [[elisp:(lsip-local-run-command "dnsmx --help")][dnsmx --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "dnsq" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnsq")][dnsq]] _|_ [[elisp:(manual-entry "dnsq")][Man]] _|_ [[elisp:(lsip-local-run-command "dnsq --help")][dnsq --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "dnsqr" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnsqr")][dnsqr]] _|_ [[elisp:(manual-entry "dnsqr")][Man]] _|_ [[elisp:(lsip-local-run-command "dnsqr --help")][dnsqr --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "dnstxt" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnstxt")][dnstxt]] _|_ [[elisp:(manual-entry "dnstxt")][Man]] _|_ [[elisp:(lsip-local-run-command "dnstxt --help")][dnstxt --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "dnstrace" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dnstrace")][dnstrace]] _|_ [[elisp:(manual-entry "dnstrace")][Man]] _|_ [[elisp:(lsip-local-run-command "dnstrace --help")][dnstrace --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Tinydns: Resolve Through /etc/resolv.conf" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Tinydns: Resolve Through /etc/resolv.conf:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Cmnd" :command "echo dnsip www.example.com" :comment "Edit" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnsip www.example.com")][echo dnsip www.example.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnsip www.example.com"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnsip www.example.com")][dnsip www.example.com]] *|*  == *|*    |
+Last Executed at: 202403-03-19:44:33  by: bystar on: HSS-1008
+----------------------------
+93.184.216.34 
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo dnsname 8.8.8.8" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnsname 8.8.8.8")][echo dnsname 8.8.8.8]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnsname 8.8.8.8"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnsname 8.8.8.8")][dnsname 8.8.8.8]] *|*  == *|*    |
+Last Executed at: 202403-03-19:44:33  by: bystar on: HSS-1008
+----------------------------
+dns.google
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo dnstxt www.example.com" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnstxt www.example.com")][echo dnstxt www.example.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnstxt gmail.com"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnstxt gmail.com")][dnstxt gmail.com]] *|*  == *|*    |
+Last Executed at: 202403-03-19:53:54  by: bystar on: HSS-1008
+----------------------------
+globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=v=spf1 redirect=_spf.google.com
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo dnsmx gmail.com" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnsmx gmail.com")][echo dnsmx gmail.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnsmx gmail.com"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnsmx gmail.com")][dnsmx gmail.com]] *|*  == *|*    |
+Last Executed at: 202403-03-19:44:33  by: bystar on: HSS-1008
+----------------------------
+10 alt1.gmail-smtp-in.l.google.com
+5 gmail-smtp-in.l.google.com
+30 alt3.gmail-smtp-in.l.google.com
+40 alt4.gmail-smtp-in.l.google.com
+20 alt2.gmail-smtp-in.l.google.com
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo dnsmx gmail.com \\\\| cut -d \\\\' \\\\' -f 2 \\\\| xargs dnsip" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnsmx gmail.com \\| cut -d \\' \\' -f 2 \\| xargs dnsip")][echo dnsmx gmail.com \\| cut -d \\' \\' -f 2 \\| xargs dnsip]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnsmx gmail.com | cut -d ' ' -f 2 | xargs dnsip"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnsmx gmail.com | cut -d ' ' -f 2 | xargs dnsip")][dnsmx gmail.com | cut -d ' ' -f 2 | xargs dnsip]] *|*  == *|*    |
+Last Executed at: 202403-03-19:44:33  by: bystar on: HSS-1008
+----------------------------
+108.177.104.27 
+142.250.107.27 
+142.250.115.26 
+142.250.141.26 
+142.250.152.26 
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo dnsqr any google.com" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnsqr any google.com")][echo dnsqr any google.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnsqr any gmail.com"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnsqr any gmail.com")][dnsqr any gmail.com]] *|*  == *|*    |
+Last Executed at: 202403-03-19:53:13  by: bystar on: HSS-1008
+----------------------------
+255 gmail.com:
+592 bytes, 1+21+0+0 records, response, noerror
+query: 255 gmail.com
+answer: gmail.com 243 A 74.125.199.19
+answer: gmail.com 243 A 74.125.199.18
+answer: gmail.com 243 A 74.125.199.83
+answer: gmail.com 243 A 74.125.199.17
+answer: gmail.com 243 28 &\007\370\260@\016\014\002\000\000\000\000\000\000\000\022
+answer: gmail.com 243 28 &\007\370\260@\016\014\002\000\000\000\000\000\000\000S
+answer: gmail.com 243 28 &\007\370\260@\016\014\002\000\000\000\000\000\000\000\023
+answer: gmail.com 243 28 &\007\370\260@\016\014\002\000\000\000\000\000\000\000\021
+answer: gmail.com 21543 NS ns2.google.com
+answer: gmail.com 21543 NS ns4.google.com
+answer: gmail.com 3543 MX 40 alt4.gmail-smtp-in.l.google.com
+answer: gmail.com 3543 MX 5 gmail-smtp-in.l.google.com
+answer: gmail.com 21543 NS ns1.google.com
+answer: gmail.com 21543 257 \000\005issuepki.goog
+answer: gmail.com 3 SOA ns1.google.com dns-admin.google.com 611883130 900 900 1800 60
+answer: gmail.com 243 16 \037v=spf1\040redirect=_spf.google.com
+answer: gmail.com 21543 NS ns3.google.com
+answer: gmail.com 3543 MX 30 alt3.gmail-smtp-in.l.google.com
+answer: gmail.com 3543 MX 10 alt1.gmail-smtp-in.l.google.com
+answer: gmail.com 243 16 @globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=
+answer: gmail.com 3543 MX 20 alt2.gmail-smtp-in.l.google.com
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep nil :title "Resolve At Specified Server" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Resolve At Specified Server:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Cmnd" :command "echo dnsq any google.com 8.8.8.8" :comment "Edit" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dnsq any google.com 8.8.8.8")][echo dnsq any google.com 8.8.8.8]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dnsq any google.com 8.8.8.8"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dnsq any google.com 8.8.8.8")][dnsq any google.com 8.8.8.8]] *|*  == *|*    |
+Last Executed at: 202403-03-20:45:31  by: bystar on: HSS-1008
+----------------------------
+255 google.com:
+1273 bytes, 1+30+0+0 records, response, weird ra, noerror
+query: 255 google.com
+answer: google.com 245 A 74.125.135.138
+answer: google.com 245 A 74.125.135.139
+answer: google.com 245 A 74.125.135.100
+answer: google.com 245 A 74.125.135.102
+answer: google.com 245 A 74.125.135.113
+answer: google.com 245 A 74.125.135.101
+answer: google.com 245 28 &\007\370\260@\016\014\001\000\000\000\000\000\000\000d
+answer: google.com 245 28 &\007\370\260@\016\014\001\000\000\000\000\000\000\000q
+answer: google.com 245 28 &\007\370\260@\016\014\001\000\000\000\000\000\000\000\212
+answer: google.com 245 28 &\007\370\260@\016\014\001\000\000\000\000\000\000\000f
+answer: google.com 3545 16 Dgoogle-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o
+answer: google.com 245 MX 10 smtp.google.com
+answer: google.com 21545 NS ns2.google.com
+answer: google.com 3545 16 Bwebexdomainverification.8YX6G=6e6922db-e3e6-4a36-904e-a805c28087fa
+answer: google.com 3545 16 -docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e
+answer: google.com 21545 65 \000\001\000\000\001\000\006\002h2\002h3
+answer: google.com 21545 NS ns4.google.com
+answer: google.com 3545 16 =onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef
+answer: google.com 3545 16 ;facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95
+answer: google.com 21545 257 \000\005issuepki.goog
+answer: google.com 3545 16 #v=spf1\040include:_spf.google.com\040~all
+answer: google.com 3545 16 *apple-domain-verification=30afIBcvSuDV2PLX
+answer: google.com 3545 16 Dgoogle-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ
+answer: google.com 3545 16 -docusign=1b0a6754-49b1-4db5-8540-d2c12664b289
+answer: google.com 3545 16 +MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB
+answer: google.com 21545 NS ns1.google.com
+answer: google.com 3545 16 @globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=
+answer: google.com 3545 16 ^atlassian-domain-verification=5YjTmWmjI92ewqkx2oXmBaD60Td9zWon9r6eakvHX6B77zzkFQto8PQ9QsKnbf4I
+answer: google.com 21545 NS ns3.google.com
+answer: google.com 5 SOA ns1.google.com dns-admin.google.com 611883130 900 900 1800 60
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo dig google.com any @8.8.8.8" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dig google.com any @8.8.8.8")][echo dig google.com any @8.8.8.8]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dig google.com any @8.8.8.8"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dig google.com any @8.8.8.8")][dig google.com any @8.8.8.8]] *|*  == *|*    |
+Last Executed at: 202403-03-20:56:27  by: bystar on: HSS-1008
+----------------------------
+
+; <<>> DiG 9.18.19-1~deb12u1-Debian <<>> google.com any @8.8.8.8
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 54725
+;; flags: qr rd ra; QUERY: 1, ANSWER: 30, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;google.com.			IN	ANY
+
+;; ANSWER SECTION:
+google.com.		299	IN	A	74.125.197.138
+google.com.		299	IN	A	74.125.197.100
+google.com.		299	IN	A	74.125.197.139
+google.com.		299	IN	A	74.125.197.102
+google.com.		299	IN	A	74.125.197.101
+google.com.		299	IN	A	74.125.197.113
+google.com.		299	IN	AAAA	2607:f8b0:400e:c03::66
+google.com.		299	IN	AAAA	2607:f8b0:400e:c03::65
+google.com.		299	IN	AAAA	2607:f8b0:400e:c03::8a
+google.com.		299	IN	AAAA	2607:f8b0:400e:c03::64
+google.com.		3599	IN	TXT	"docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e"
+google.com.		3599	IN	TXT	"v=spf1 include:_spf.google.com ~all"
+google.com.		3599	IN	TXT	"docusign=1b0a6754-49b1-4db5-8540-d2c12664b289"
+google.com.		3599	IN	TXT	"globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8="
+google.com.		3599	IN	TXT	"MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB"
+google.com.		21599	IN	NS	ns1.google.com.
+google.com.		3599	IN	TXT	"facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95"
+google.com.		21599	IN	CAA	0 issue "pki.goog"
+google.com.		3599	IN	TXT	"atlassian-domain-verification=5YjTmWmjI92ewqkx2oXmBaD60Td9zWon9r6eakvHX6B77zzkFQto8PQ9QsKnbf4I"
+google.com.		21599	IN	HTTPS	1 . alpn="h2,h3"
+google.com.		3599	IN	TXT	"onetrust-domain-verification=de01ed21f2fa4d8781cbc3ffb89cf4ef"
+google.com.		21599	IN	NS	ns3.google.com.
+google.com.		3599	IN	TXT	"webexdomainverification.8YX6G=6e6922db-e3e6-4a36-904e-a805c28087fa"
+google.com.		3599	IN	TXT	"google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ"
+google.com.		3599	IN	TXT	"apple-domain-verification=30afIBcvSuDV2PLX"
+google.com.		59	IN	SOA	ns1.google.com. dns-admin.google.com. 611883130 900 900 1800 60
+google.com.		299	IN	MX	10 smtp.google.com.
+google.com.		3599	IN	TXT	"google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o"
+google.com.		21599	IN	NS	ns4.google.com.
+google.com.		21599	IN	NS	ns2.google.com.
+
+;; Query time: 16 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (TCP)
+;; WHEN: Sun Mar 03 20:56:27 PST 2024
+;; MSG SIZE  rcvd: 1284
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep nil :title "Other Resolution Tools -- dig, nslookup, host" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Other Resolution Tools -- dig, nslookup, host_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep t :folding? nil :label "Intro" :command "dig" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "dig")][dig]] _|_ [[elisp:(manual-entry "dig")][Man]] _|_ [[elisp:(lsip-local-run-command "dig --help")][dig --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "host" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "host")][host]] _|_ [[elisp:(manual-entry "host")][Man]] _|_ [[elisp:(lsip-local-run-command "host --help")][host --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep nil :folding? nil :label "Intro" :command "nslookup" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "nslookup")][nslookup]] _|_ [[elisp:(manual-entry "nslookup")][Man]] _|_ [[elisp:(lsip-local-run-command "nslookup --help")][nslookup --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Other Tools: Resolve Through /etc/resolv.conf" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Other Tools: Resolve Through /etc/resolv.conf:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Cmnd" :command "echo dig www.example.com any" :comment "Edit" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo dig www.example.com any")][echo dig www.example.com any]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "dig www.example.com any"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "dig www.example.com any")][dig www.example.com any]] *|*  == *|*    |
+Last Executed at: 202403-03-21:01:36  by: bystar on: HSS-1008
+----------------------------
+
+; <<>> DiG 9.18.19-1~deb12u1-Debian <<>> www.example.com any
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 17352
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;www.example.com.		IN	ANY
+
+;; ANSWER SECTION:
+www.example.com.	21600	IN	AAAA	2606:2800:220:1:248:1893:25c8:1946
+www.example.com.	21600	IN	RRSIG	AAAA 13 3 86400 20240323180017 20240302213820 2684 example.com. Dde5Xyx40eZxzD4xBa8HDBfu+w9Bz3UYD3N+7E3i8xIixA4uCSz2Ye+G XQ0nGmirGzDrQwBpa3J4F59WVpT0nQ==
+
+;; Query time: 56 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (TCP)
+;; WHEN: Sun Mar 03 21:01:36 PST 2024
+;; MSG SIZE  rcvd: 179
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo nslookup www.example.com" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo nslookup www.example.com")][echo nslookup www.example.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "nslookup www.example.com"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "nslookup www.example.com")][nslookup www.example.com]] *|*  == *|*    |
+Last Executed at: 202403-03-21:12:26  by: bystar on: HSS-1008
+----------------------------
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	www.example.com
+Address: 93.184.216.34
+Name:	www.example.com
+Address: 2606:2800:220:1:248:1893:25c8:1946
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo host www.example.com" :comment "Edit" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo host www.example.com")][echo host www.example.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "host www.example.com"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "host www.example.com")][host www.example.com]] *|*  == *|*    |
+Last Executed at: 202403-03-21:13:42  by: bystar on: HSS-1008
+----------------------------
+www.example.com has address 93.184.216.34
+www.example.com has IPv6 address 2606:2800:220:1:248:1893:25c8:1946
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep nil :title "Misc Utilities" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Misc Utilities_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmndIntro :outLevel 1 :sep t :folding? nil :label "Intro" :command "fpdns" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Intro/ :: [[elisp:(lsip-local-run-command "fpdns")][fpdns]] _|_ [[elisp:(manual-entry "fpdns")][Man]] _|_ [[elisp:(lsip-local-run-command "fpdns --help")][fpdns --help]] *#*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Cmnd" :command "sudo apt-get -y install fpdns" :comment "Edit" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "sudo apt-get -y install fpdns")][sudo apt-get -y install fpdns]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmnd" :command "echo fpdns example.com" :comment "Edit" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmnd/ :: [[elisp:(lsip-local-run-command "echo fpdns example.com")][echo fpdns example.com]] *|*  =Edit= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1 :command "fpdns 192.168.0.148"  :results "stdout" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /stdout :/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "fpdns 192.168.0.148")][fpdns 192.168.0.148]] *|*  == *|*    |
+Last Executed at: 202403-03-21:27:45  by: bystar on: HSS-1008
+----------------------------
+fingerprint (192.168.0.148, 192.168.0.148): DJ Bernstein TinyDNS 1.05 [Old Rules]  
+
+* [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep nil :title "BISOS Utilities" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _BISOS Utilities_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+*         *lcaDnsReports -- bystarDnsReports -- Diagnostics, Verification, Probing, Information*  [[elisp:(beginning-of-buffer)][Top]]  [[elisp:(org-cycle)][| ]]
+**     Main Facilities:    [[elisp:(lsip-local-run-command "lcaDnsReport.sh")][lcaDnsReport.sh]]  [[elisp:(lsip-local-run-command "bystarDnsReport.sh")][bystarDnsReport.sh]]
+**         Brief Description Of Main Facilities:  [[elisp:(lsip-local-run-command "bystarDnsReport.sh -i dnsSeeAlso")][bystarDnsReport.sh -i dnsSeeAlso]]
+**     ============  Diagnostics
+***        lcaDnsReport.sh -h -v -n showRun -i diagFull persoarabic.org
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Leftover From Old Panles" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Leftover From Old Panles_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+* aFqdn:              [[elisp:(setq bx:iimBash:aFqdn "")][""]] | [[elisp:(bx:valueReader:symbol 'bx:bxpCmnd:aFqdn)][Any]] | [[elisp:(setq bx:bxpCmnd:aFqdn "www.example.com")][www.example.com]] | [[elisp:(setq bx:iimBash:aFqdn "www.by-star.net")][www.by-star.net]]
+* aIpAddr:            [[elisp:(setq bx:iimBash:aIpAddr "")][""]] | [[elisp:(bx:valueReader:symbol 'bx:bxpCmnd:aIpAddr)][Any]] | [[elisp:(setq bx:bxpCmnd:aIpAddr "8.8.8.8")][8.8.8.8]]
+* Execute Command Line:   [[elisp:(bx:iimBash:cmndLineExec)][Run Cmnd Line]] | [[elisp:(bx:iimBash:cmndLineExec :wrapper "echo")][Echo Cmnd Line]]
+*      DNS Resolv Name      ::  [[elisp:(bx:bxpCmnd:cmndLineExec :name "dnsip" :aFqdn t)][dnsip aFqdn]]
+*      DNS Resolv IP-Addr   ::  [[elisp:(bx:bxpCmnd:cmndLineExec :name "dnsname" :aIpAddr t)][dnsname aIpAddr]] ||
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

@@ -2,33 +2,32 @@
 ####+BEGIN: bxPanel:common/title-plus
 #+title: connectivity/L3-firewall
 #+roam_tags: leaf
-#+roam_key: panels/connectivity/L3-firewall
-[[roam:panels/connectivity]]
+#+roam_key: blee-binders/connectivity/L3-firewall
+[[roam:blee-binders/connectivity]]
 ####+END
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
-**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
-**  This File :: *= /bisos/panels/connectivity/L3-firewall/fullUsagePanel-en.org =*
-* /file-truename:/  /bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall/fullUsagePanel-en.org
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
+**  This File :: *= /bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall/fullUsagePanel-en.org =* 
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
 **  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
-* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Leaf:: panels/connectivity -- L3-firewall~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Leaf:: blee-binders/connectivity -- L3-firewall~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L2-dhcp/_nodeBase_")][ =L2-dhcp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-interfaces")][L3-interfaces]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-routing")][L3-routing]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L4")][L4]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/dns-resolver")][dns-resolver]] *|* [[elisp:(dired "/bisos/git/auth/bxRepos/blee-binders/connectivity/layer-2+")][ ~layer-2+~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/nmcli/_nodeBase_")][ =nmcli= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/speed-test")][speed-test]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/traffic-monitoring")][traffic-monitoring]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiConnection/_nodeBase_")][ =wifiConnection= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/_nodeBase_")][ =wifiHotspot= ]] *|*
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L2-dhcp/_nodeBase_")][ =L2-dhcp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-interfaces")][L3-interfaces]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-routing")][L3-routing]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L4")][L4]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/dnsResolution/_nodeBase_")][ =dnsResolution= ]] *|* [[elisp:(dired "/bisos/git/auth/bxRepos/blee-binders/connectivity/layer-2+")][ ~layer-2+~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/nmcli/_nodeBase_")][ =nmcli= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/speed-test")][speed-test]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/traffic-monitoring")][traffic-monitoring]] *|* 
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiConnection/_nodeBase_")][ =wifiConnection= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/wifiHotspot/_nodeBase_")][ =wifiHotspot= ]] *|* 
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/L3-firewall")][L3-firewall]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -38,7 +37,7 @@
 ** Overview Comes Here.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ICMs Overview" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ICMs Overview:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 1 :sep nil :folding? nil :label "shIcm" :icmName "l3Admin.sh" :comment "" :afterComment ""
@@ -46,49 +45,49 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo iptables -v -x -n -L"  :results t :comment "List iptables" :afterComment "Diagnostics"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "sudo iptables -v -x -n -L")][sudo iptables -v -x -n -L]] *|*  =List iptables= *|*  Diagnostics  |
-Last Executed at: 202401-12-11:59:46  by: bystar on: PML-1006.intra
+Last Executed at: 202403-03-17:11:13  by: bystar on: HSS-1008
 ----------------------------
 Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
-    pkts      bytes target     prot opt in     out     source               destination
-15691886 31535404349 LIBVIRT_INP  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+    pkts      bytes target     prot opt in     out     source               destination         
+ 3237945 366101630 LIBVIRT_INP  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
 
 Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
-    pkts      bytes target     prot opt in     out     source               destination
-      24     7980 LIBVIRT_FWX  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-      24     7980 LIBVIRT_FWI  all  --  *      *       0.0.0.0/0            0.0.0.0/0
-      24     7980 LIBVIRT_FWO  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+    pkts      bytes target     prot opt in     out     source               destination         
+ 1755423 3755233987 LIBVIRT_FWX  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+ 1755423 3755233987 LIBVIRT_FWI  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
+  673833 46399842 LIBVIRT_FWO  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
 
 Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
-    pkts      bytes target     prot opt in     out     source               destination
- 9946715 44982560282 LIBVIRT_OUT  all  --  *      *       0.0.0.0/0            0.0.0.0/0
+    pkts      bytes target     prot opt in     out     source               destination         
+ 2722872 8625176814 LIBVIRT_OUT  0    --  *      *       0.0.0.0/0            0.0.0.0/0           
 
 Chain LIBVIRT_FWI (1 references)
-    pkts      bytes target     prot opt in     out     source               destination
-       0        0 ACCEPT     all  --  *      virbr1  0.0.0.0/0            192.168.121.0/24     ctstate RELATED,ESTABLISHED
-       0        0 REJECT     all  --  *      virbr1  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+    pkts      bytes target     prot opt in     out     source               destination         
+ 1081590 3708834145 ACCEPT     0    --  *      virbr1  0.0.0.0/0            192.168.121.0/24     ctstate RELATED,ESTABLISHED
+       0        0 REJECT     0    --  *      virbr1  0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
 
 Chain LIBVIRT_FWO (1 references)
-    pkts      bytes target     prot opt in     out     source               destination
-       0        0 ACCEPT     all  --  virbr1 *       192.168.121.0/24     0.0.0.0/0
-       0        0 REJECT     all  --  virbr1 *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
+    pkts      bytes target     prot opt in     out     source               destination         
+  673831 46399142 ACCEPT     0    --  virbr1 *       192.168.121.0/24     0.0.0.0/0           
+       0        0 REJECT     0    --  virbr1 *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-port-unreachable
 
 Chain LIBVIRT_FWX (1 references)
-    pkts      bytes target     prot opt in     out     source               destination
-       0        0 ACCEPT     all  --  virbr1 virbr1  0.0.0.0/0            0.0.0.0/0
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     0    --  virbr1 virbr1  0.0.0.0/0            0.0.0.0/0           
 
 Chain LIBVIRT_INP (1 references)
-    pkts      bytes target     prot opt in     out     source               destination
-       0        0 ACCEPT     udp  --  virbr1 *       0.0.0.0/0            0.0.0.0/0            udp dpt:53
-       0        0 ACCEPT     tcp  --  virbr1 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:53
-       0        0 ACCEPT     udp  --  virbr1 *       0.0.0.0/0            0.0.0.0/0            udp dpt:67
-       0        0 ACCEPT     tcp  --  virbr1 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:67
+    pkts      bytes target     prot opt in     out     source               destination         
+    7352   445391 ACCEPT     17   --  virbr1 *       0.0.0.0/0            0.0.0.0/0            udp dpt:53
+       0        0 ACCEPT     6    --  virbr1 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:53
+     481   156806 ACCEPT     17   --  virbr1 *       0.0.0.0/0            0.0.0.0/0            udp dpt:67
+       0        0 ACCEPT     6    --  virbr1 *       0.0.0.0/0            0.0.0.0/0            tcp dpt:67
 
 Chain LIBVIRT_OUT (1 references)
-    pkts      bytes target     prot opt in     out     source               destination
-       0        0 ACCEPT     udp  --  *      virbr1  0.0.0.0/0            0.0.0.0/0            udp dpt:53
-       0        0 ACCEPT     tcp  --  *      virbr1  0.0.0.0/0            0.0.0.0/0            tcp dpt:53
-       0        0 ACCEPT     udp  --  *      virbr1  0.0.0.0/0            0.0.0.0/0            udp dpt:68
-       0        0 ACCEPT     tcp  --  *      virbr1  0.0.0.0/0            0.0.0.0/0            tcp dpt:68
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     17   --  *      virbr1  0.0.0.0/0            0.0.0.0/0            udp dpt:53
+       0        0 ACCEPT     6    --  *      virbr1  0.0.0.0/0            0.0.0.0/0            tcp dpt:53
+     479   163215 ACCEPT     17   --  *      virbr1  0.0.0.0/0            0.0.0.0/0            udp dpt:68
+       0        0 ACCEPT     6    --  *      virbr1  0.0.0.0/0            0.0.0.0/0            tcp dpt:68
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
@@ -112,13 +111,13 @@ Chain LIBVIRT_OUT (1 references)
 *** TODO Some Idea
 ####+BEGIN: blee:bxPanel:evolutionMaintainers
 ** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
-** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>  
 ***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
 ***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
 ####+END
 * B|
 ####+BEGIN: blee:bxPanel:footerPanelControls
-* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
 * /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:footerOrgParams
