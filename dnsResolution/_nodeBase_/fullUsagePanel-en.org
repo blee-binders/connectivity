@@ -382,15 +382,6 @@ fingerprint (192.168.0.148, 192.168.0.148): DJ Bernstein TinyDNS 1.05 [Old Rules
 **         Brief Description Of Main Facilities:  [[elisp:(lsip-local-run-command "bystarDnsReport.sh -i dnsSeeAlso")][bystarDnsReport.sh -i dnsSeeAlso]]
 **     ============  Diagnostics
 ***        lcaDnsReport.sh -h -v -n showRun -i diagFull persoarabic.org
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Leftover From Old Panles" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Leftover From Old Panles_: |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
-* aFqdn:              [[elisp:(setq bx:iimBash:aFqdn "")][""]] | [[elisp:(bx:valueReader:symbol 'bx:bxpCmnd:aFqdn)][Any]] | [[elisp:(setq bx:bxpCmnd:aFqdn "www.example.com")][www.example.com]] | [[elisp:(setq bx:iimBash:aFqdn "www.by-star.net")][www.by-star.net]]
-* aIpAddr:            [[elisp:(setq bx:iimBash:aIpAddr "")][""]] | [[elisp:(bx:valueReader:symbol 'bx:bxpCmnd:aIpAddr)][Any]] | [[elisp:(setq bx:bxpCmnd:aIpAddr "8.8.8.8")][8.8.8.8]]
-* Execute Command Line:   [[elisp:(bx:iimBash:cmndLineExec)][Run Cmnd Line]] | [[elisp:(bx:iimBash:cmndLineExec :wrapper "echo")][Echo Cmnd Line]]
-*      DNS Resolv Name      ::  [[elisp:(bx:bxpCmnd:cmndLineExec :name "dnsip" :aFqdn t)][dnsip aFqdn]]
-*      DNS Resolv IP-Addr   ::  [[elisp:(bx:bxpCmnd:cmndLineExec :name "dnsname" :aIpAddr t)][dnsname aIpAddr]] ||
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
