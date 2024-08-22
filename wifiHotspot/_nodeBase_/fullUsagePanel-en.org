@@ -91,6 +91,16 @@
 ** [Device] Alfa Networks AWUS036ACH [Chipset] 88XXau (rtl8812au)
 ** https://github.com/aircrack-ng/rtl8812au
 ** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Cleanups -- Deletes" :anchor "" :extraInfo "wifiDev=wlx00c0cab044d5 conName=wap010 ssid=lws-1000010"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Cleanups -- Deletes:* |]]  wifiDev=wlx00c0cab044d5 conName=wap010 ssid=lws-1000010  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection delete WifiBridge0"  :results nil :comment "CONNECTION" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection delete WifiBridge0")][echo sudo nmcli connection delete WifiBridge0]] *|*  =CONNECTION= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "echo sudo nmcli connection delete wap010"  :results nil :comment "CONNECTION" :afterComment "Intrusive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "echo sudo nmcli connection delete wap010")][echo sudo nmcli connection delete wap010]] *|*  =CONNECTION= *|*  Intrusive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Create Hotspot And Configure It" :anchor "" :extraInfo "wifiDev=wlx00c0cab044d5 conName=wap010 ssid=lws-1000010"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Create Hotspot And Configure It:* |]]  wifiDev=wlx00c0cab044d5 conName=wap010 ssid=lws-1000010  [[elisp:(org-shifttab)][<)]] E|
