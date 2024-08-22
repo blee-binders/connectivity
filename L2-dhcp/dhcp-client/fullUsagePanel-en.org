@@ -55,6 +55,9 @@ Last Executed at: 202403-03-17:11:46  by: bystar on: HSS-1008
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "sudo nmap --script broadcast-dhcp-discover -e $(l3Admin.sh -i defaultInterface)"  :results nil :comment "DHCP Server of Default Interface" :afterComment "Passive"
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(lsip-local-run-command "sudo nmap --script broadcast-dhcp-discover -e $(l3Admin.sh -i defaultInterface)")][sudo nmap --script broadcast-dhcp-discover -e $(l3Admin.sh -i defaultInterface)]] *|*  =DHCP Server of Default Interface= *|*  Passive  [[elisp:(org-shifttab)][<)]] E|
+####+END:
 
 * B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
