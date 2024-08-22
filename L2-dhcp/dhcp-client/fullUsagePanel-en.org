@@ -41,17 +41,17 @@
 * Comment:: l3Admin.sh -i defaultInterface runs  ip -4 route ls | grep default | grep -Po '(?<=dev )(\S+)'
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "l3Admin.sh -i defaultInterface"  :results t :comment "default interface" :afterComment "Passive"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "l3Admin.sh -i defaultInterface")][l3Admin.sh -i defaultInterface]] *|*  =default interface= *|*  Passive  |
-Last Executed at: 202403-03-17:11:46  by: bystar on: HSS-1008
+Last Executed at: 202408-21-12:20:55  by: bystar on: HSS-1005.intra
 ----------------------------
-eno1
+enp0s31f6
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:runResult :outLevel 1  :command "l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)"  :results t :comment "default ipaddr" :afterComment "Passive"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     [[elisp:(org-cycle)][| /Results:/ |]]  [[elisp:(blee:org-update-named-dblocks-above)][D-Run]] :: [[elisp:(lsip-local-run-command "l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)")][l3Admin.sh -i givenInterfaceGetIPAddr $(l3Admin.sh -i defaultInterface)]] *|*  =default ipaddr= *|*  Passive  |
-Last Executed at: 202403-03-17:11:46  by: bystar on: HSS-1008
+Last Executed at: 202408-21-12:21:01  by: bystar on: HSS-1005.intra
 ----------------------------
-192.168.0.148
+192.168.0.135
 
 * [[elisp:(org-shifttab)][<)]] E|
 ####+END:
